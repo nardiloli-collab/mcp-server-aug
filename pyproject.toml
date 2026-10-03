@@ -1,0 +1,18 @@
+[project]
+name = "mcp-class"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]>=2.2.0",
+    "requests>=2.34.2",
+    "yfinance>=1.7.0",
+]
+
+[project.scripts]
+mcp-class = "mcp_class:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
